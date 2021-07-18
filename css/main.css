@@ -17,13 +17,14 @@ body {
   position: fixed;
   z-index: 100;
   top: 0;
-  padding-left: 10px;
-  padding-top: 10px;
   font-size: 1.2rem;
-  vertical-align: center;
 }
 
 .header h3 {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  position: absolute;
   display: inline-block;
 }
 
