@@ -1,6 +1,7 @@
 .main-wrapper {
   margin-top: 8vh;
   padding-bottom: 50px;
+  background: blue;
 }
 
 .main-container .form-body {
