@@ -16,6 +16,7 @@ body {
   background: #222222;
   min-height: 50%;
   width: 80%;
+  margin: 30px 0;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
