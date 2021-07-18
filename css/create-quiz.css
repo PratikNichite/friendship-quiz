@@ -1,0 +1,176 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen {
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: "body";
+}
+#questions {
+  margin-top: 8vh;
+  min-height: 2.1rem;
+  width: 100%;
+  display: inline-block;
+  background-color: lightgreen;
+}
+
+.container__question,
+.container__answer {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.container__add-button,
+.container__submit-button {
+  width: 80%;
+  text-align: center;
+}
+
+.answer-container {
+  min-height: 50%;
+  width: 100%;
+  background: #222222;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.answer-container h3 {
+  margin-top: 10px;
+  max-height: 10%;
+}
+
+#selected-questions-list {
+  list-style: none;
+}
+
+#options {
+  list-style: none;
+  padding: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.radio-label {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 7px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.radio-container input[type="radio"] {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.radio-container input[type="radio"]:checked + .radio-label {
+  border: 2px solid white;
+  transform: scale(1.1);
+  transition: 300ms;
+  animation: change-colors 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-colors {
+  0% {
+    border-color: red;
+  }
+  20% {
+    border-color: yellow;
+  }
+  40% {
+    border-color: green;
+  }
+  60% {
+    border-color: blue;
+  }
+  80% {
+    border-color: gray;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  margin-bottom: 2rem;
+}
+.btn:not(#copy) {
+  max-width: 300px;
+}
+
+.container__share {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.container__share-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__share-link {
+  background: #222222;
+  color: white;
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+
+#copy {
+  margin-top: 0;
+  width: 80%;
+  border-radius: 0 0 10px 10px;
+}
+
+.container__share-copy-log {
+  display: inline-block;
+  background: gray;
+  color: lightgreen;
+  padding: 10px;
+  border: 2px dashed white;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 200%);
+  visibility: hidden;
+}
