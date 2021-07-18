@@ -3,7 +3,7 @@ let questionSet = [
     questionID: 0,
     question: `What do you like to drink?`,
     options: [
-      "coffe",
+      "coffee",
       "tea",
       "whisky",
       "green-tea",
