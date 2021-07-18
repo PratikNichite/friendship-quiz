@@ -8,6 +8,11 @@
 body {
   background-color: #141414;
   color: #f7f7f7;
+  display: grid;
+  grid-tempate-areas: 
+    "head",
+    "body";
+  grid-rows: 8% 92%;
 }
 
 .header {
@@ -18,11 +23,11 @@ body {
   z-index: 100;
   top: 0;
   font-size: 1.2rem;
+  grid-area: "head";
 }
 
 .screen {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
+  grid-area: "body";
 }
 
 .header h3 {
