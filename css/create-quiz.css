@@ -120,9 +120,6 @@ body {
   align-items: center;
 }
 
-#submit {
-  margin-bottom: 20px;
-}
 .btn:not(#copy) {
   max-width: 300px;
 }
