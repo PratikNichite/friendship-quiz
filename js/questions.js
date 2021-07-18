@@ -36,4 +36,9 @@ let questionSet = [
     question: "Which is your favourite dish?",
     options: ["chicken", "fish", "paneer", "omlet", "noodles", "mushroom"],
   },
+  {
+    questionID: 4,
+    question: "What is your favourite ice cream flavor?",
+    options: ["vanilla", "chocolate", "strawberry", "cookie-dough", "butter-scotch"],
+  },
 ];
