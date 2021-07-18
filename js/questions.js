@@ -41,4 +41,14 @@ let questionSet = [
     question: "What is your favourite ice cream flavor?",
     options: ["vanilla", "chocolate", "strawberry", "cookie-dough", "butter-scotch"],
   },
+  {
+    questionID: 5,
+    question: "Which sport do you like?",
+    options: ["cricket", "soccer", "hockey", "Badminton", "Boxing", "car-race"],
+  },
+  {
+    questionID: 6,
+    question: "Which season is your favourite?",
+    options: ["summer", "winter", "autumn", "spring"],
+  }
 ];
