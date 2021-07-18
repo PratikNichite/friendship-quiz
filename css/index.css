@@ -1,6 +1,6 @@
 .main-container {
   position: relative;
-  min-height: 20vh;
+  min-height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: center;
