@@ -1,1 +1,2 @@
-const myWebAddress = "pratiknichite.github.io/friendship-quiz";
+const shortWebId = "friendship-quiz";
+const myWebAddress = "pratiknichite.github.io/" + shortWebId;
