@@ -9,7 +9,7 @@ body {
 
 .container {
   min-height: 90%;
-  margin-top: 8vh;
+  padding-top: 8vh;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
