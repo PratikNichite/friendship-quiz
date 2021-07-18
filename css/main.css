@@ -8,11 +8,6 @@
 body {
   background-color: #141414;
   color: #f7f7f7;
-  display: grid;
-  grid-template-areas: 
-    "head",
-    "body";
-  grid-rows: 8% 92%;
 }
 
 .header {
