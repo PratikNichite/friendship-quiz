@@ -4,7 +4,7 @@
 } */
 
 .main-container {
-  min-height: 92vh;
+  min-height: 50vh;
   width: 100vw;
   margin-top: 8vh;
   display: flex;
