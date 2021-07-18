@@ -9,6 +9,7 @@ body {
 
 .container {
   min-height: 90%;
+  margin-top: 8vh;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -18,7 +19,6 @@ body {
   grid-area: "body";
 }
 #questions {
-  margin-top: 8vh;
   min-height: 2.1rem;
   width: 100%;
   display: inline-block;
