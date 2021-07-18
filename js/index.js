@@ -8,5 +8,5 @@ window.onload = () => {
 
 button.addEventListener("click", () => {
   pageTransition.classList.remove("page-transition");
-  window.location.href = "../redirect/home-page.html";
+  window.location.href = "redirect/home-page.html";
 });
