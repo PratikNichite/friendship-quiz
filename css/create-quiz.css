@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  min-height: 70%;
+  min-height: 20%;
   padding-top: 8vh;
   width: 100%;
   display: flex;
