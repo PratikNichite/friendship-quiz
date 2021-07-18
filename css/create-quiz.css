@@ -18,6 +18,11 @@ body {
   align-items: center;
   grid-area: "body";
 }
+
+#submit{
+  margin-bottom: 20px;
+}
+
 #questions {
   min-height: 2.1rem;
   width: 100%;
