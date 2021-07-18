@@ -20,6 +20,11 @@ body {
   font-size: 1.2rem;
 }
 
+.screen {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
 .header h3 {
   top: 50%;
   left: 10px;
