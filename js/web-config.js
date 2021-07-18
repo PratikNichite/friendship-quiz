@@ -1,1 +1,1 @@
-const myWebAddress = "127.0.0.1:5500";
+const myWebAddress = "pratiknichite.github.io/friendship-quiz";
