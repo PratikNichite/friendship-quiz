@@ -28,6 +28,7 @@ body {
 
 .screen {
   grid-area: "body";
+  margin-bottom: 50px;
 }
 
 .header h3 {
