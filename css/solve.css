@@ -4,8 +4,8 @@ body {
 }
 
 .main-container {
-  min-height: 100%;
-  width: 100%;
+  min-height: 92vh;
+  width: 100vw;
   margin-top: 8vh;
   display: flex;
   justify-content: center;
