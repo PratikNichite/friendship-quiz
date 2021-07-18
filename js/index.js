@@ -6,6 +6,7 @@ window.onload = () => {
   pageTransition.classList.add("page-transition");
 };
 
+
 button.addEventListener("click", () => {
   pageTransition.classList.remove("page-transition");
   window.location.href = "/redirect/home-page.html";
