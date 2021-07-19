@@ -62,7 +62,7 @@ const showAnswers = () => {
       for(let j=0;j<answerSet.length;j++) {
         if (
           Number(answerSet[j][0]) === hostSet[i].questionID &&
-          Number(answerSet[j][1] === hostSet[i].answer
+          Number(answerSet[j][1]) === hostSet[i].answer
         ) {
           answerCardDiv.style.background = "green";
          }
