@@ -45,8 +45,8 @@ const showAnswers = () => {
 
     const answerDiv = document.createElement("div");
     const answerImgDiv = document.createElement("div");
-    answerImgDiv.style.background = `url("../img/q${i + 1}/option${
-      i + 1
+    answerImgDiv.style.background = `url("../img/q${ hostSet[i].questionID + 1}/option${
+      hostSet[i].answer + 1
     }.jpg")`;
     answerImgDiv.classList.add("image");
     answerImgDiv.style.backgroundSize = "cover";
@@ -59,17 +59,14 @@ const showAnswers = () => {
     answerCardDiv.appendChild(answerDiv);
     answerCardDiv.classList.add("answer-list__answer-card");
 
-    for (const obj of answerSet) {
-      for (let i = 0; i < hostSet.length; i++) {
+      for(const obj of answerSet) {
         if (
           Number(obj[0]) === hostSet[i].questionID &&
           Number(obj[1]) === hostSet[i].answer
         ) {
           answerCardDiv.style.background = "green";
-        }
+         }
       }
-    }
-
     questionAnswer.appendChild(answerCardDiv);
   }
 };
