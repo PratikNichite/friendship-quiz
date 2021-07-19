@@ -59,10 +59,10 @@ const showAnswers = () => {
     answerCardDiv.appendChild(answerDiv);
     answerCardDiv.classList.add("answer-list__answer-card");
 
-      for(const obj of answerSet) {
+      for(const obj of hostSet) {
         if (
-          Number(obj[0]) === hostSet[i].questionID &&
-          Number(obj[1]) === hostSet[i].answer
+          obj.questionID === Number(answerSet[i][0]) &&
+          obj.answer === Number(answerSet[i][1])
         ) {
           answerCardDiv.style.background = "green";
          }
