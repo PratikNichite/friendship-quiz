@@ -43,7 +43,6 @@
 
 .container {
   height: 40px;
-  font-size: 30px;
   overflow: hidden;
   display: flex;
 }
@@ -52,6 +51,11 @@
   margin-left: 10px;
   position: relative;
   animation: flipper 10s linear infinite;
+}
+
+.container p,
+.name-list li{
+   font-size: 30px;
 }
 
 .name-list {
