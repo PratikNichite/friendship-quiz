@@ -59,14 +59,14 @@ const showAnswers = () => {
     answerCardDiv.appendChild(answerDiv);
     answerCardDiv.classList.add("answer-list__answer-card");
 
-      //for(let j=0;j<answerSet.length;j++) {
-      //  if (
-      //    Number(answerSet[j][0]) === hostSet[i].questionID &&
-      //    Number(answerSet[j][1]) === hostSet[i].answer
-      //  ) {
-      //    answerCardDiv.style.background = "green";
-      //   }
-     // }
+      for(let j=0;j<answerSet.length;j++) {
+        if (
+          Number(answerSet[j][0]) === hostSet[i].questionID &&
+          Number(answerSet[j][1]) === hostSet[i].answer
+        ) {
+          answerCardDiv.style.background = "green";
+         }
+       }
     questionAnswer.appendChild(answerCardDiv);
   }
 };
