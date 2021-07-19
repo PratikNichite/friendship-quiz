@@ -51,7 +51,7 @@
 .container__name-list-container {
   margin-left: 10px;
   position: relative;
-  animation: flipper 5s linear infinite;
+  animation: flipper 10s linear infinite;
 }
 
 .name-list {
