@@ -79,6 +79,15 @@ const showScore = () => {
   scoreBoard.appendChild(h2);
 };
 
+const QuestionModifierTwo = (i,question) => {
+  var newQuestion =
+    "Q." + (i + 1) + " " + question;
+  newQuestion = newQuestion.replace("do you", "does " + creatorName);
+  newQuestion = newQuestion.replace("your", creatorName + "'s");
+  newQuestion = newQuestion.replace("you", creatorName);
+  return newQuestion;
+};
+
 const showAnswers = () => {
   answerTitle.innerHTML =
     "Answers of " + creatorName + "'s quiz are as follows!";
@@ -88,7 +97,7 @@ const showAnswers = () => {
 
   for (var i = 0; i < solverQuestionSet.length; i++) {
     const p = document.createElement("p");
-    p.innerHTML = `Q.${i + 1} ${solverQuestionSet[i].question}`;
+    p.innerHTML = `${QuestionModifierTwo(i, solverQuestionSet[i].question})`;
     const questionDiv = document.createElement("div");
     questionDiv.appendChild(p);
     questionDiv.classList.add("answer-list__question");
