@@ -217,7 +217,7 @@ nextButton.addEventListener("click", () => {
         sessionStorage.setItem("creatorName", creatorName);
         sessionStorage.setItem("solverSet", answerSet);
         window.location.href = "../redirect/show-quiz-answers.html";
-      }, 300);
+      }, 1000);
     } else {
       blackScreen.style.visibility = "visible";
       whitescreen.style.visibility = "visible";
