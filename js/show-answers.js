@@ -19,7 +19,6 @@ const storeInVar = () => {
   score = Number(sessionStorage.getItem("score"));
   creatorName = sessionStorage.getItem("creatorName");
   answerSet = sessionStorage.getItem("solverSet").split(",");
-  console.log;
 };
 
 const showScore = () => {
@@ -44,8 +43,10 @@ const showAnswers = () => {
   answerTitle.innerHTML =
     "Answers of " + creatorName + "'s quiz are as follows!";
   const help = document.createElement("p");
+
   help.innerHTML = "(Red: wrong answer & Green: right answer)";
   answerTitle.appendChild(help);
+
   for (var i = 0; i < hostSet.length; i++) {
     const p = document.createElement("p");
     p.innerHTML = `Q.${i + 1} ${QuestionModifier(i,hostSet[i].question)}`;
