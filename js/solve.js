@@ -43,8 +43,8 @@ window.onload = function () {
       pageTransition.classList.add("page-transition");
     } else {
       pageTransition.classList.add("page-transition");
-      pageTransition.style.display = "none";
       errorLoading.classList.add("display-error");
+      errorLoading.style.display = "block";
     }
   });
 };
