@@ -97,7 +97,7 @@ const showAnswers = () => {
 
   for (var i = 0; i < solverQuestionSet.length; i++) {
     const p = document.createElement("p");
-    p.innerHTML = `${QuestionModifierTwo(i, solverQuestionSet[i].question})`;
+    p.innerHTML = `${QuestionModifierTwo(i, solverQuestionSet[i].question)}`;
     const questionDiv = document.createElement("div");
     questionDiv.appendChild(p);
     questionDiv.classList.add("answer-list__question");
