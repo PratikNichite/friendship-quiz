@@ -210,14 +210,14 @@ nextButton.addEventListener("click", () => {
       pageTransition.classList.remove("page-transition");
       clearOptions();
       sendScore();
-      SetTimeout(()=>{
+      setTimeout(()=>{
         sessionStorage.clear();
         sessionStorage.setItem("hostSet", JSON.stringify(solverQuestionSet));
         sessionStorage.setItem("score", score);
         sessionStorage.setItem("creatorName", creatorName);
         sessionStorage.setItem("solverSet", answerSet);
         window.location.href = "../redirect/show-quiz-answers.html";
-      }, 500);
+      }, 300);
     } else {
       blackScreen.style.visibility = "visible";
       whitescreen.style.visibility = "visible";
