@@ -3,6 +3,12 @@
   height: 100vh;
 } */
 
+*, ::after, ::before {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 .main-container {
   min-height: 50vh;
   width: 100vw;
