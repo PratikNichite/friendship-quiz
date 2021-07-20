@@ -206,8 +206,8 @@ nextButton.addEventListener("click", () => {
     //show backdrop error
     saveOption(currentQuestion);
     if (answerSet.length === solverQuestionSet.length) {
-      calcScore();
       pageTransition.classList.remove("page-transition");
+      calcScore();
       clearOptions();
       sendScore();
       setTimeout(()=>{
