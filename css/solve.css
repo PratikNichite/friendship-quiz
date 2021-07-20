@@ -173,6 +173,7 @@
 
 .answer-list__tag-line {
   min-height: 80px;
+  max-width: 500px;
   display: inline-block;
   background: black;
   color: lightcoral;
